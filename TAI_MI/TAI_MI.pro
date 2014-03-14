@@ -13,8 +13,14 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        fenetreprincipale.cpp
+        fenetreprincipale.cpp \
+    automate.cpp \
+    etat.cpp \
+    transition.cpp
 
-HEADERS  += fenetreprincipale.h
+HEADERS  += fenetreprincipale.h \
+    automate.h \
+    etat.h \
+    transition.h
 
 FORMS    += fenetreprincipale.ui
