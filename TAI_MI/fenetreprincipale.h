@@ -2,7 +2,8 @@
 #define FENETREPRINCIPALE_H
 
 #include <QMainWindow>
-
+#include "analysesyntaxique.h"
+#include <QMessageBox>
 namespace Ui {
 class fenetrePrincipale;
 }

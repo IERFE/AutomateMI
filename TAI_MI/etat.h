@@ -24,7 +24,7 @@ class Etat{
 
 public:
     Etat();
-
+    Etat(const string &nomDeLEtat);
     /* ********************************************************\
      * METHODES
      * ********************************************************/
@@ -37,8 +37,8 @@ public:
     string &getNom();// Renvoi une reference sur le nom de l'état
     void setNom(const string &Nom);// Permet de changer le nom de l'etat;
 
-    const bool &isInitial(); // Retourne vraix si l'etat est initial et faux si il ne l'es pas
-    const bool &isTerminal(); // Retourne vraix si l'etat est terminal et faux si il ne l'es pas
+    bool isInitial() const; // Retourne vraix si l'etat est initial et faux si il ne l'es pas
+    bool isTerminal() const; // Retourne vraix si l'etat est terminal et faux si il ne l'es pas
     void setInitial(const bool &b); // Permet de modifier l'etat initial en true ou false
     void setTerminal(const bool &b); // Permet de modifier l'etat terminal en true ou false
 

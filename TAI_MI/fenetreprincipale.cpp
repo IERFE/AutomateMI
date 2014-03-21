@@ -6,6 +6,16 @@ fenetrePrincipale::fenetrePrincipale(QWidget *parent) :
     ui(new Ui::fenetrePrincipale)
 {
     ui->setupUi(this);
+    try {
+        AnalyseSyntaxique a;
+    }
+    catch (string &erreur) {
+        QMessageBox msgBox;
+        msgBox.setText(QString::fromUtf8(erreur.c_str()));
+        msgBox.exec();
+    }
+
+
 }
 
 fenetrePrincipale::~fenetrePrincipale()

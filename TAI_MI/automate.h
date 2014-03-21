@@ -19,6 +19,10 @@ class Automate{
 public:
     Automate();
     void ajouterUnEtat(Etat &etat);
+    void ajouterUnEtat(const string &nomEtat);
+
+    bool rendreInitialUnEtat(Etat &etat);
+    bool rendreInitialUnEtat(const string &nomEtat);
 
 };
 
